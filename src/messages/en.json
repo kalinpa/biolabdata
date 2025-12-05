@@ -1,0 +1,230 @@
+{
+  "metadata": {
+    "title": "BioLabData - Biostatistics for Science and Medicine",
+    "description": "Professional statistical analysis for scientific research, dissertations and medical publications. From Data to Discoveries.",
+    "keywords": "biostatistics, statistical analysis, dissertation, scientific research, medical statistics, SPSS, clinical data"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "methods": "Methods",
+    "portfolio": "Portfolio",
+    "process": "Process",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getQuote": "Get a Quote"
+  },
+  "hero": {
+    "tagline": "From Data to Discoveries",
+    "title": "Biostatistics for Science and Medicine",
+    "subtitle": "Professional statistical analysis for your scientific research, dissertations and medical publications",
+    "cta": "Contact Us",
+    "secondary": "View Services"
+  },
+  "features": {
+    "title": "Why Choose Us",
+    "subtitle": "Expertise that makes the difference",
+    "speed": {
+      "title": "Speed",
+      "desc": "Results in 5-10 business days, not weeks"
+    },
+    "quality": {
+      "title": "Quality",
+      "desc": "Publication-ready analyses and visualizations"
+    },
+    "support": {
+      "title": "Support",
+      "desc": "Consultations and help throughout the process"
+    },
+    "expertise": {
+      "title": "Expertise",
+      "desc": "Years of experience in biostatistics"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Comprehensive solutions for your data",
+    "academic": {
+      "title": "Academic Research",
+      "desc": "PhD dissertations, master's theses, scientific projects",
+      "features": ["Descriptive statistics", "Hypothesis testing", "Correlation analysis", "Regression models", "Charts and visualizations"]
+    },
+    "publications": {
+      "title": "Scientific Publications",
+      "desc": "Preparation for international scientific journals",
+      "features": ["Journal-ready statistics", "Effect sizes and CI", "Response to reviewers", "Statistical revision"]
+    },
+    "clinical": {
+      "title": "Clinical Data",
+      "desc": "Analysis of hospital and clinical trial data",
+      "features": ["Survival analysis", "ROC curves", "Logistic regression", "Mixed models", "Meta-analysis"]
+    },
+    "consulting": {
+      "title": "Consulting",
+      "desc": "Expert help at every stage of your research",
+      "features": ["Study design", "Power analysis", "Sample size", "Method selection"]
+    },
+    "corporate": {
+      "title": "Corporate Solutions",
+      "desc": "For pharmaceutical companies and research organizations",
+      "features": ["Long-term partnerships", "Dedicated support", "Personalized solutions"]
+    },
+    "cta": "Get a Quote"
+  },
+  "methods": {
+    "title": "Statistical Methods",
+    "subtitle": "Full range of modern statistical approaches",
+    "categories": {
+      "descriptive": "Descriptive Statistics",
+      "parametric": "Parametric Tests",
+      "nonparametric": "Non-parametric Tests",
+      "correlation": "Correlation Analysis",
+      "regression": "Regression Analysis",
+      "survival": "Survival Analysis",
+      "advanced": "Advanced Methods"
+    }
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "Simple and effective 4-step process",
+    "steps": {
+      "step1": {
+        "title": "Send Your Data",
+        "desc": "Fill out the contact form and attach your data (Excel, CSV, SPSS)"
+      },
+      "step2": {
+        "title": "Free Consultation",
+        "desc": "We contact you within 24 hours to clarify requirements"
+      },
+      "step3": {
+        "title": "Analysis & Processing",
+        "desc": "We perform statistical analysis using modern methods"
+      },
+      "step4": {
+        "title": "Ready Results",
+        "desc": "You receive a complete report with tables, charts and interpretation"
+      }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Your partner in scientific research",
+    "story": {
+      "title": "Our Story",
+      "content": "BioLabData was created with one goal - to make quality biostatistics accessible to every researcher. We combine years of experience in data analysis with modern technologies to deliver fast and reliable results."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "To transform your data into meaningful scientific discoveries. We believe every researcher deserves access to professional statistical support."
+    },
+    "values": {
+      "title": "Our Values",
+      "quality": "Uncompromising quality",
+      "integrity": "Scientific integrity",
+      "speed": "Speed and efficiency",
+      "support": "Personal support"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Examples of our work",
+    "empty": "Soon you will be able to see examples of our work here.",
+    "categories": {
+      "all": "All",
+      "dissertation": "Dissertations",
+      "publication": "Publications",
+      "clinical": "Clinical Data"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Articles, news and useful tips",
+    "readMore": "Read more",
+    "empty": "We will publish useful articles here soon.",
+    "backToList": "Back to all articles"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're ready to help with your project",
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "phone": "Phone",
+      "response": "We respond within 24 hours"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+359...",
+      "university": "University/Organization (optional)",
+      "universityPlaceholder": "Medical University...",
+      "subject": "Research topic (optional)",
+      "subjectPlaceholder": "Briefly describe the topic...",
+      "service": "Service type",
+      "serviceOptions": {
+        "notSure": "Not sure",
+        "academic": "Academic research",
+        "publication": "Scientific publication",
+        "clinical": "Clinical data",
+        "consulting": "Consultation",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Describe your needs and questions...",
+      "file": "Attach file (optional)",
+      "privacy": "I agree with the privacy policy",
+      "submit": "Send inquiry",
+      "sending": "Sending...",
+      "success": "Thank you for your inquiry! We will contact you within 24 hours.",
+      "error": "An error occurred. Please try again or contact us directly by email."
+    }
+  },
+  "cta": {
+    "title": "Ready to get started?",
+    "subtitle": "Contact us for a free consultation",
+    "button": "Get a Quote"
+  },
+  "footer": {
+    "tagline": "From Data to Discoveries",
+    "description": "Professional statistical analysis for scientific research and medical publications.",
+    "links": "Quick Links",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© {year} BioLabData. All rights reserved."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": {
+      "q1": {
+        "question": "How long does the analysis take?",
+        "answer": "Standard analysis takes 5-10 business days depending on complexity. We offer express service for urgent projects."
+      },
+      "q2": {
+        "question": "What data formats do you accept?",
+        "answer": "We work with Excel, CSV, SPSS, Stata and other standard formats. If you have data in another format, contact us."
+      },
+      "q3": {
+        "question": "Do you provide consultations before analysis?",
+        "answer": "Yes, the initial consultation is free. We discuss your needs and suggest the most appropriate approach."
+      },
+      "q4": {
+        "question": "What do I get as a final result?",
+        "answer": "You receive a complete report with tables, charts, statistical results and written interpretation, ready for inclusion in a dissertation or publication."
+      },
+      "q5": {
+        "question": "Do you do revisions?",
+        "answer": "Yes, we include free revisions if there are comments from a supervisor or reviewers."
+      }
+    }
+  },
+  "404": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist.",
+    "back": "Go to Home"
+  }
+}

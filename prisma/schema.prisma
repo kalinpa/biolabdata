@@ -1,0 +1,123 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Admin users
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String?
+  role      Role     @default(ADMIN)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  posts     Post[]
+}
+
+enum Role {
+  ADMIN
+  EDITOR
+}
+
+// Contact form submissions
+model Inquiry {
+  id          String        @id @default(cuid())
+  name        String
+  email       String
+  phone       String?
+  university  String?
+  subject     String?
+  serviceType String?
+  message     String
+  file        String?
+  status      InquiryStatus @default(NEW)
+  notes       String?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+enum InquiryStatus {
+  NEW
+  IN_PROGRESS
+  COMPLETED
+  ARCHIVED
+}
+
+// Blog posts
+model Post {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  titleBg     String
+  titleEn     String
+  excerptBg   String?
+  excerptEn   String?
+  contentBg   String
+  contentEn   String
+  image       String?
+  published   Boolean  @default(false)
+  publishedAt DateTime?
+  author      User     @relation(fields: [authorId], references: [id])
+  authorId    String
+  tags        Tag[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([slug])
+  @@index([published])
+}
+
+model Tag {
+  id    String @id @default(cuid())
+  name  String @unique
+  posts Post[]
+}
+
+// Site content (editable texts)
+model Content {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  valueBg   String
+  valueEn   String
+  type      ContentType @default(TEXT)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([key])
+}
+
+enum ContentType {
+  TEXT
+  HTML
+  IMAGE
+}
+
+// Site settings
+model Setting {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([key])
+}
+
+// Portfolio items
+model PortfolioItem {
+  id          String   @id @default(cuid())
+  titleBg     String
+  titleEn     String
+  descBg      String?
+  descEn      String?
+  image       String?
+  category    String?
+  published   Boolean  @default(false)
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
