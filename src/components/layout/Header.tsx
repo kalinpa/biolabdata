@@ -1,10 +1,11 @@
+
 'use client';
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
-import { Menu, X, ChevronDown, Globe } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export default function Header() {
@@ -49,8 +50,8 @@ export default function Header() {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled
-          ? 'bg-white/90 backdrop-blur-xl shadow-lg shadow-neutral-200/20 border-b border-neutral-100'
+        isScrolled || isOpen
+          ? 'bg-white shadow-lg shadow-neutral-200/20 border-b border-neutral-100'
           : 'bg-transparent'
       )}
     >
@@ -100,7 +101,6 @@ export default function Header() {
 
           {/* Right side */}
           <div className="hidden lg:flex items-center gap-4">
-            {/* Language Switcher */}
             <button
               onClick={switchLocale}
               className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-neutral-600 hover:text-primary-600 hover:bg-neutral-50 rounded-lg transition-all duration-200"
@@ -108,8 +108,6 @@ export default function Header() {
               <Globe className="w-4 h-4" />
               <span>{locale === 'bg' ? 'EN' : 'БГ'}</span>
             </button>
-
-            {/* CTA Button */}
             <Link href={`/${locale}/contact`} className="btn-primary">
               {t('getQuote')}
             </Link>
@@ -127,7 +125,7 @@ export default function Header() {
         {/* Mobile Navigation */}
         <div
           className={cn(
-            'lg:hidden overflow-hidden transition-all duration-300',
+            'lg:hidden overflow-hidden transition-all duration-300 bg-white',
             isOpen ? 'max-h-[500px] pb-6' : 'max-h-0'
           )}
         >
